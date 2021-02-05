@@ -11,5 +11,5 @@ push ds
     int 21h
 pop ds
 pop dx
-pop ax	
+pop ax
 ret

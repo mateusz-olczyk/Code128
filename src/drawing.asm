@@ -1,6 +1,7 @@
 ; Finds the position of the first pixel of the barcode according to the number of bytes to be
 ; encoded. This calculation is needed to center the barcode horizontally and vertically. Every pixel
-; till the starting position will be painted white.
+; till the starting position will be painted white. The final barcode will fit between 2/5 and 3/5
+; of the screen height.
 ; [in] CL - number of bytes to be encoded
 ; [out] ES:[DI] - starting position
 PROC_startpoint:
