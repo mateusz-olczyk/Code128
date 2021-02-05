@@ -3,12 +3,15 @@ Intel 8086 application written in assembly language. Converts a message to its g
 representation as Code128B.
 
 ## Prerequisites
-- You need a machine with Windows
+- You need a machine with Windows.
 - The compiler (Microsoft Macro Assembler v6.13.7299) is already included in the repository and
   should run on any Windows version.
-- You need to have DOSBox (https://www.dosbox.com/)
+- You need to have DOSBox (https://www.dosbox.com/).
 - DOSBox must be installed in the standard path `C:\Program Files (x86)` or its directory must be
   added to the PATH environment variable.
+- You need to have Python3. It must be reachable directly via `python` command (so the Python
+  directory must be added to the PATH environment variable). Otherwise you cannot use automatic
+  `compile.bat` and `run.bat` scripts.
 
 ## Running the application
 Firstly run `compile.bat` script. If the compilation is successful you get following message on the
