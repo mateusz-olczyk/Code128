@@ -1,4 +1,7 @@
 # Code128
+
+[![build](https://github.com/mateusz-olczyk/Code128/workflows/build/badge.svg)](https://github.com/mateusz-olczyk/Code128/actions?query=workflow%3Abuild)
+
 Intel 8086 application written in assembly language. Converts a message to its graphical
 representation as Code128B.
 
