@@ -1,0 +1,21 @@
+name: build
+
+on: [push]
+
+jobs:
+  build:
+    name: build
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Setup Python
+      uses: actions/setup-python@v2.2.1
+      with:
+        python-version: 3.7
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Compile
+      run: python ${{github.workspace}}/compile.py
