@@ -19,3 +19,8 @@ jobs:
 
     - name: Compile
       run: python ${{github.workspace}}/compile.py
+
+    - name: Check output existence
+      uses: andstor/file-existence-action@v1
+      with:
+        files: "${{github.workspace}}/build/output.exe"
